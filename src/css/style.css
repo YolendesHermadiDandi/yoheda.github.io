@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap");
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Inconsolata', monospace; 
+font-family: 'Poppins', sans-serif;*/
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #0d0b22;
+}
+
+header {
+  font-size: larger;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+header p,
+.lp-content span,
+.navbar-items a:hover {
+  color: #bf4440;
+}
+
+.active {
+  color: #bf4440 !important;
+}
+
+.navbar-items {
+  display: flex;
+  margin-left: auto;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.navbar-items a,
+.lp-content {
+  color: white;
+}
+
+.landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+  /* background-color: #BF4440; */
+}
+
+.about,
+.portofolio {
+  color: white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* About start */
+.about-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kotak-about {
+  margin-top: 3rem;
+  height: 2rem;
+  /* width: 1rem; */
+  display: block;
+  position: absolute;
+  z-index: 100;
+  background-color: white;
+}
+
+.about-content {
+  padding-top: 1.5rem;
+}
+
+.about-content h1 {
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  /* color: white; */
+  transform: translate(-50%, -50%);
+}
+
+.about-content h1:nth-child(1) {
+  color: #bf4440;
+  -webkit-text-stroke: 2px #bf4440;
+}
+
+.about-content h1:nth-child(2) {
+  color: white;
+  animation: gelombang 4s ease-in-out;
+  -webkit-animation: gelombang 4s ease-in-out infinite;
+}
+
+.main-content-about {
+  color: white;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  padding-top: 2rem;
+  overflow: hidden;
+  /* height: 90vh; */
+}
+
+.main-content-about span {
+  color: #bf4440;
+}
+
+.main-content-about p,
+h2,
+.main-content-about span {
+  font-family: "Inconsolata", monospace !important;
+  font-size: x-large;
+  text-align: center;
+}
+
+.about-nav-items,
+.about-nav-items a {
+  display: flex;
+  font-size: larger;
+  margin-top: 2rem;
+  color: #bf4440;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.about-nav-items li a:hover {
+  color: white !important;
+}
+
+.about-nav-active {
+  color: white !important;
+}
+
+.warna {
+  color: #bf4440;
+}
+/* About end */
+
+/* Riwayat content start */
+.riwayat-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.pendidikan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  /* background-color: #bf4440; */
+}
+
+/* Pendidikan start*/
+
+.pendidikan-container .tahun,
+.pendidikan-container .nama {
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+  font-size: larger;
+  font-family: "Inconsolata", monospace !important;
+}
+
+.tahun {
+  color: #bf4440;
+}
+/* Pendidikan end*/
+
+/* Skills start */
+.skill-container {
+  margin-left: 31vh;
+  overflow: hidden;
+}
+
+.skill-container th {
+  color: #bf4440;
+  border-top: 2px dashed #bf4440;
+  border-bottom: 2px dashed #bf4440;
+}
+
+.skill-container .tools {
+  padding-left: 1rem;
+  border-left: 2px dashed #bf4440;
+}
+.skill-container .programing,
+.skill-container .tools {
+  padding-right: 1rem;
+  text-align: justify;
+  /* background-color: #bf4440; */
+  padding-bottom: 1px;
+  font-size: larger;
+  font-family: "Inconsolata", monospace !important;
+}
+
+/* Skills end */
+
+/* Pengalaman start */
+.pengalaman-container {
+  margin-left: 20rem;
+  /* background-color: aqua; */
+}
+
+.pengalaman-container .tahun,
+.pengalaman-container .nama {
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  font-size: larger;
+  font-family: "Inconsolata", monospace !important;
+}
+/* Pengalaman end */
+
+.skills,
+.pengalaman {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+
+/* Riwayat content end */
+
+/* portofolio start */
+
+.card-container {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  /* box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px; */
+  background-color: #bf4440;
+  padding: 1rem 1rem;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto {
+  margin: 1rem 0;
+}
+
+.button {
+  font-family: "Inconsolata", monospace !important;
+  appearance: button;
+  background-color: #0d0b22;
+  background-image: none;
+  border: 1px solid #0d0b22;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #bf4440;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 1rem 5px 10px 0;
+  overflow: visible;
+  padding: 5px 30px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button:focus {
+  text-decoration: none;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+.button:active {
+  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+/* Modal start */
+/* portofolio detail */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* height: 100%; */
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-container {
+  position: relative;
+  background-color: #0d0b22;
+  color: var(--bg);
+  margin: 10% auto;
+  padding: 1rem;
+  border: 1px solid #666;
+  width: 50%;
+  height: 45%;
+  animation: animateModal 0.5s;
+  -webkit-animation: animateModal 0.5s;
+}
+
+.modal-container .close-icon {
+  position: absolute;
+  right: 1rem;
+}
+
+.modal-content {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.gambar-portofolio {
+  display: flex;
+  align-items: center;
+}
+
+.modal-content img {
+  height: 4rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.modal-content p,
+.modal-content h3 {
+  color: white;
+  text-align: justify;
+  font-family: "Inconsolata", monospace !important;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin-top: 1.2rem;
+}
+
+.portofolio-content span {
+  color: #bf4440;
+  font-family: "Inconsolata", monospace !important;
+}
+
+/* .modal-content a{
+  display: flex;
+  gap: 1rem;
+  width: 12rem;
+  background-color: #bf4440;
+  color: #0d0b22;
+  margin-top: 1rem;
+  padding: 1rem 1.6rem;
+} */
+
+.modal-content a,
+.lp-content a {
+  /* font-family: "Inconsolata", monospace !important; */
+  appearance: button;
+  background-color: #bf4440;
+  background-image: none;
+  border: 1px solid #0d0b22;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #0d0b22;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 1rem 5px 10px 0;
+  overflow: visible;
+  padding: 5px 30px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.modal-content a:focus,
+.lp-content a:focus {
+  text-decoration: none;
+}
+
+.modal-content a:hover {
+  text-decoration: none;
+}
+
+.modal-content a:active,
+.lp-content a:active {
+  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.modal-content a:not([disabled]):active,
+.lp-content a:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+/* Modal end */
+
+/* portofolio end */
+
+.kotak-porto {
+  height: 2rem;
+  display: block;
+  position: absolute;
+  background-color: #bf4440;
+}
+
+/* Animation */
+.kotak-about {
+  animation-name: Hapus;
+  animation-duration: 0.5s;
+}
+
+.kotak-porto {
+  animation-name: Hapus;
+  animation-duration: 0.5s;
+}
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes warna {
+  0% {
+    color: white;
+  }
+  99% {
+    color: white;
+  }
+  100% {
+    color: #bf4440;
+  }
+}
+
+@keyframes Hapus {
+  from {
+    left: 44%;
+    width: 12rem;
+  }
+  to {
+    left: 44%;
+    width: 0;
+  }
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes gelombang {
+  0%,
+  100% {
+    clip-path: polygon(
+      0 45%,
+      15% 44%,
+      32% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0 60%,
+      16% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+@keyframes animateModal {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* Media query */
+/* @media (min-width: 768px) {
+  .button {
+    padding: 12px 50px;
+  }
+} */
+
+/* Laptop */
+@media (max-width: 1366px) {
+}
+/* Tablet */
+@media (max-width: 768px) {
+  header {
+    font-size: 62.5%;
+  }
+}
+/* Mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}

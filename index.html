@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="icon" href="http://example.com/favicon.png">
+    <title>Yolendes Hermadi Dandi</title>
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <p class="logo">YHD</p>
+
+        <ul class="navbar-items">
+            <li><a href="#" id="nav-home" onclick="GantiPage(this.id)" class="active">Home</a></li>
+            <li><a href="#" id="nav-about" onclick="GantiPage(this.id)">About</a></li>
+            <li><a href="#" id="nav-portofolio" onclick="GantiPage(this.id)">Portofolio</a></li>
+        </ul>
+    </header>
+    <!-- header end -->
+    <div class="landing-page" id="landing-page">
+        <div class="lp-content">
+            <h1>HI <span class="wave">👋</span></h1>
+            <h1>Nama saya <span>Yolendes Hermadi Dandi</span></h1>
+            <h4>Web Developer — Quality Control</h4>
+            <a href="../src/document/CV Y0lendes Hermadi Dandi.pdf">My CV</a>
+        </div>
+    </div>
+
+    <!-- About start-->
+    <div class="about" id="about">
+        <div class="about-head">
+            <!-- <span class="kotak-about"></span> -->
+            <div class="about-content">
+                <h1>About Me</h1>
+                <h1>About Me</h1>
+            </div>
+        </div>
+        <div class="main-content-about">
+            <h2>Hallo <span class="wave">👋</span></h2>
+            <p>Perkenalkan nama saya <span>Yolendes Hermadi Dandi</span>, Saya baru saya menyelesaikan sudi sarjana saya
+                di
+                Universitas sanata Dharma jurusan <span>Informatika</span> pada september 2022. Dalam mengisi waktu
+                kosong, saya
+                biasanya melakukan hobi saya seperti menonton film, baca komik, internetan, dan mempelajari beberapa
+                bahasa pemograman seperti <span>PHP, JAVA, Python, HTML, dan CSS.</span>
+
+            </p>
+        </div>
+        <div class="about-nav">
+            <ul class="about-nav-items">
+                <li><a href="#" id="nav-pendidikan" class="about-nav-active"
+                        onclick="GantiAbout(this.id)">Pendidikan</a></li>
+                <li><a href="#" id="nav-skills" onclick="GantiAbout(this.id)">Skills</a></li>
+                <li><a href="#" id="nav-pengalaman" onclick="GantiAbout(this.id)">Pengalaman</a></li>
+            </ul>
+        </div>
+        <div class="riwayat-content">
+            <div class="pendidikan" id="pendidikan">
+                <div class="pendidikan-container">
+                    <table>
+                        <tr>
+                            <td class="tahun">2018 - 2022</td>
+                            <td class="nama">Universitas Sanata Dharma</td>
+                        </tr>
+                        <tr>
+                            <td class="tahun">2015 - 2018</td>
+                            <td class="nama">SMA Panca Setya Sintang</td>
+                        </tr>
+                        <tr>
+                            <td class="tahun">2012 - 2015</td>
+                            <td class="nama">SMPN 1 Sintang</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="skills" id="skills">
+                <div class="skill-container">
+                    <table>
+                        <tr>
+                            <th class="programing">Programing</th>
+                            <th class="tools">Tools/Application/IDE/Framework</th>
+                        </tr>
+                        <tr>
+                            <td class="programing">PHP</td>
+                            <td class="tools">Laravel | Codeigniter</td>
+                        </tr>
+                        <tr>
+                            <td class="programing">JAVA</td>
+                            <td class="tools">Netbeans</td>
+                        </tr>
+                        <tr>
+                            <td class="programing">HTML/CSS</td>
+                            <td class="tools">VS Code</td>
+                        </tr>
+                        <tr>
+                            <td class="programing">Python</td>
+                            <td class="tools">Spyder</td>
+                        </tr>
+                        <tr>
+                            <td class="programing">MySQL | PLSQL</td>
+                            <td class="tools">XAMPP (Php my admin) | MySQL Workbench | Toad</td>
+                        </tr>
+                        <tr>
+                            <td class="programing">RPA</td>
+                            <td class="tools">UI Path</td>
+                        </tr>
+                        <tr>
+                            <td class="programing">QC</td>
+                            <td class="tools">Manual | Automation (Katalon)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="pengalaman" id="pengalaman">
+                <div class="pengalaman-container">
+                    <table>
+                        <tr>
+                            <td class="tahun">Agustus 2022 - Desember 2022</td>
+                            <td class="nama">Magang di Berijalan Technocenter ACC sebagai Quality Control</td>
+                        </tr>
+                        <tr>
+                            <td class="tahun">Januari 2022 - September 2022</td>
+                            <td class="nama">Mengerjakan prototype website UMKM dari projek dosen</td>
+                        </tr>
+                        <tr>
+                            <td class="tahun">Agustus 2021 - Desember 2021</td>
+                            <td class="nama">Asisten Dosen Algoritma dan Pemograman</td>
+                        </tr>
+                        <tr>
+                            <td class="tahun">Agustus 2021 - Desember 2021</td>
+                            <td class="nama">Asisten Dosen Rekayasa Perangkat Lunak</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Abut end -->
+
+    <!-- Portofolio start -->
+    <div class="portofolio" id="portofolio">
+        <h1>Portofolio</h1>
+        <div class="lp-content">
+            <div class="card-container">
+                <div class="card">
+                    <h2>Kos Krisna</h2>
+                    <div class="foto">
+                        <img src="../src/img/Kost Krisna.png" alt="">
+                    </div>
+                    <h3>2021</h3>
+                    <button class="button tombol-detail" data-modal="kos-krisna" role="button">Detail</button>
+                </div>
+                <div class="card">
+                    <h2>UMKM ABDI</h2>
+                    <div class="foto">
+                        <img src="../src/img/UMKM ABDI.png" alt="">
+                    </div>
+                    <h3>2022</h3>
+                    <button class="button tombol-detail" data-modal="umkm-abdi" role="button">Detail</button>
+                </div>
+                <div class="card">
+                    <h2>Setir Kanan</h2>
+                    <div class="foto">
+                        <img src="../src/img/Setir Kanan.jpg" alt="">
+                    </div>
+                    <h3>2022</h3>
+                    <button class="button tombol-detail" data-modal="setir-kanan" role="button">Detail</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portopolio end -->
+
+    <!-- Portofolio Modal  start-->
+    <div class="modal" id="kos-krisna">
+        <div class="modal-container">
+            <a href="#" class="close-icon">X</a>
+            <div class="modal-content">
+                <div class="gambar-portofolio">
+                    <img src="../src/img/Kost Krisna.png" alt="kos Krisna">
+                </div>
+                <div class="portofolio-content">
+                    <h3>kos Krisna | 2021</h3>
+                    <p>Kos Krisna merupakan projek yang menggunakan <span>HTML, CSS, Javascript, Servlet, JSP, dan DBMS
+                            MySQL.</span> Projek ini dibuat untuk kebutuhan pengelolanan kos, dan dikerjakan bersama
+                        dengan 3 teman saya semasa kuliah. Role saya di projek ini adalah sebagai <span>backend
+                            develpoer.</span></p>
+                    <a href="https://www.youtube.com/watch?v=TEmZ2r6wvBE" target="_blank">Lihat Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="umkm-abdi">
+        <div class="modal-container">
+            <a href="#" class="close-icon">X</a>
+            <div class="modal-content">
+                <div class="gambar-portofolio">
+                    <img src="../src/img/UMKM ABDI.png" alt="umkm abdi">
+                </div>
+                <div class="portofolio-content">
+                    <h3>UMKM ABDI | 2022</h3>
+                    <p>UMKM Abdi merupakan projek dosen yang saya kerjakan dengan 1 teman saya, projek ini menggunakan
+                        <span>HTML, Javascript, PHP (Codeigniter), CSS, Bootstrap, dab DBMS MySQL.</span> projek ini
+                        dibuat untuk mengelola <span>data barang, data pelanggan, penjualan barang, dan data pembayaran
+                            cicilan.</span> Role saya di projek ini adalah <span> fullStack developer.</span>{{ Id:
+                        Admin | Pw: admin123 }}
+                    </p>
+                    <a href="https://abdiumkm.000webhostapp.com/" target="_blank">Lihat Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="setir-kanan">
+        <div class="modal-container">
+            <a href="#" class="close-icon">X</a>
+            <div class="modal-content">
+                <div class="gambar-portofolio">
+                    <img src="../src/img/Setir Kanan.jpg" alt="setir kanan">
+                </div>
+                <div class="portofolio-content">
+                    <h3>Setir Kanan | 2022</h3>
+                    <p>Setir Kanan merupakan sebuah projek real yang di kerjakan selama mengikuti <span>magang di
+                            Berijalan Technocenter ACC</span> dengan role sebagai <span>Quality Control</span>. Diprojek
+                        ini saya melakukan <span>manual testing</span> dengan lingkup testing yang dilakukan adalah
+                        <span>positive test dan negative test.</span>
+                    </p>
+                    <a href="../src/document/YOLENDES HERMADI DANDI.pdf">Lihat Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portofolio Modal  end-->
+
+    <script src="../src/js/script.js"></script>
+</body>
+
+</html>
