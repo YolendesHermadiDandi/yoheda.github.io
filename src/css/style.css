@@ -249,7 +249,7 @@ h2,
   /* box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px; */
   background-color: #bf4440;
   padding: 1rem 1rem;
-  margin-left: 1rem;
+  margin: 1rem 1rem;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -559,13 +559,100 @@ h2,
 }
 /* Tablet */
 @media (max-width: 768px) {
-  header {
-    font-size: 62.5%;
+  /* about start */
+  .skill-container {
+    margin-left: 0px;
   }
+
+  .pengalaman-container {
+    margin-left: 3rem;
+  }
+
+  /* about end */
+
+  /* portofolio start */
+  .card-container {
+    display: flex;
+    justify-content: center;
+
+    /* align-items: center; */
+  }
+
+  .modal-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .modal-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gambar-portofolio {
+    margin-top: 1rem;
+  }
+
+  /* portofolio end */
 }
+
 /* Mobile */
 @media (max-width: 450px) {
-  html {
-    font-size: 55%;
+  /* Home start */
+  .lp-content {
+    padding: 10px 1rem;
   }
+
+  /* Home end */
+
+  /* about start */
+  .pendidikan-container .tahun,
+  .pendidikan-container .nama {
+    padding: 1rem 1rem;
+  }
+
+  .main-content-about p {
+    text-align: justify;
+  }
+
+  .about-nav-items a {
+    font-size: 18px;
+  }
+
+  .skill-container {
+    font-size: 10px;
+    margin-left: 0px;
+  }
+
+  .pengalaman-container {
+    margin-left: 3rem;
+    font-size: 10px;
+    /* background-color: aqua; */
+  }
+
+  /* about end */
+
+  /* portofolio start  */
+  .card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .modal-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gambar-portofolio {
+    margin-top: 1rem;
+  }
+
+  /* portofplio end */
 }
