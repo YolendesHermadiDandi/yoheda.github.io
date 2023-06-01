@@ -184,7 +184,6 @@ h2,
 
 /* Skills start */
 .skill-container {
-  margin-left: 31vh;
   overflow: hidden;
 }
 
@@ -369,16 +368,6 @@ h2,
   font-family: "Inconsolata", monospace !important;
 }
 
-/* .modal-content a{
-  display: flex;
-  gap: 1rem;
-  width: 12rem;
-  background-color: #bf4440;
-  color: #0d0b22;
-  margin-top: 1rem;
-  padding: 1rem 1.6rem;
-} */
-
 .modal-content a,
 .lp-content a {
   /* font-family: "Inconsolata", monospace !important; */
@@ -561,7 +550,7 @@ h2,
 @media (max-width: 768px) {
   /* about start */
   .skill-container {
-    margin-left: 0px;
+    margin: auto 10px;
   }
 
   .pengalaman-container {
@@ -621,7 +610,7 @@ h2,
 
   .skill-container {
     font-size: 10px;
-    margin-left: 0px;
+    margin: auto 10px;
   }
 
   .pengalaman-container {
